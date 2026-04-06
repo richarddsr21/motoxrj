@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Zap, Gauge, Tag } from "lucide-react"
+import Link from "next/link"
 
 const WHATSAPP_NUMBER = "5521981121015"
 
@@ -94,7 +95,7 @@ export function Modelos() {
                     <span className="font-semibold text-foreground">{m.uso}</span>
                   </div>
                 </div>
-                <a
+                <Link
                   href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Quero saber mais sobre o modelo ${m.nome}.`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -105,7 +106,7 @@ export function Modelos() {
                   }`}
                 >
                   Pedir orçamento
-                </a>
+                </Link>
               </div>
             </div>
           ))}

@@ -1,4 +1,5 @@
 import { MapPin, Phone, Clock, Navigation } from "lucide-react"
+import Link from "next/link"
 import { FaInstagram, FaWhatsapp } from "react-icons/fa"
 
 const WHATSAPP_NUMBER = "5521981121015"
@@ -66,7 +67,7 @@ export function LocalizacaoContato() {
                 </div>
               </div>
               <div className="h-px bg-border" aria-hidden="true" />
-              <a
+              <Link
                 href={`https://maps.google.com/maps?q=Estrada+do+Magarça+2795+Rio+de+Janeiro+RJ`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -74,7 +75,7 @@ export function LocalizacaoContato() {
               >
                 <Navigation className="w-4 h-4" />
                 Como chegar
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -93,7 +94,7 @@ export function LocalizacaoContato() {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-            <a
+            <Link
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -104,8 +105,8 @@ export function LocalizacaoContato() {
               </div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">WhatsApp</p>
               <p className="text-sm font-semibold text-foreground">{TELEFONE}</p>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://instagram.com/motox_rj"
               target="_blank"
               rel="noopener noreferrer"
@@ -116,8 +117,8 @@ export function LocalizacaoContato() {
               </div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Instagram</p>
               <p className="text-sm font-semibold text-foreground">@motox_rj</p>
-            </a>
-            <a
+            </Link>
+            <Link
               href={`tel:+55${WHATSAPP_NUMBER}`}
               className="group bg-background border border-border rounded-sm p-6 flex flex-col items-center text-center gap-3 hover:border-primary/60 transition-all duration-300"
             >
@@ -126,7 +127,7 @@ export function LocalizacaoContato() {
               </div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Telefone</p>
               <p className="text-sm font-semibold text-foreground">{TELEFONE}</p>
-            </a>
+            </Link>
             <div className="group bg-background border border-border rounded-sm p-6 flex flex-col items-center text-center gap-3">
               <div className="flex items-center justify-center w-14 h-14 bg-primary/10 border border-primary/20 rounded-sm">
                 <MapPin className="w-7 h-7 text-primary" />
@@ -136,7 +137,7 @@ export function LocalizacaoContato() {
             </div>
           </div>
           <div className="text-center">
-            <a
+            <Link
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -144,7 +145,7 @@ export function LocalizacaoContato() {
             >
               <FaWhatsapp className="w-6 h-6" fill="currentColor" aria-hidden="true"/>
               Chamar no WhatsApp agora
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X, Zap } from "lucide-react"
 import { FaWhatsapp } from "react-icons/fa"
+import Link from "next/link"
 
 const WHATSAPP_NUMBER = "5521981121015"
 const WHATSAPP_MSG = encodeURIComponent("Olá! Gostaria de saber mais sobre as motos e scooters elétricas da Moto X.")
@@ -34,26 +35,26 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="#inicio" className="flex items-center gap-2 group">
+          <Link href="#inicio" className="flex items-center gap-2 group">
             <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-sm">
               <Zap className="w-5 h-5 text-primary-foreground" fill="currentColor" />
             </div>
             <span className="text-xl font-black tracking-wider text-foreground uppercase">
               MOTO<span className="text-primary">X</span>
             </span>
-          </a>
+          </Link>
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors duration-200"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </nav>
-          <a
+          <Link
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
             target="_blank"
             rel="noopener noreferrer"
@@ -61,7 +62,7 @@ export function Header() {
           >
             <FaWhatsapp className="w-5 h-5" fill="currentColor" aria-hidden="true"/>
             Falar no WhatsApp
-          </a>
+          </Link>
           <button
             className="lg:hidden text-foreground p-2"
             onClick={() => setOpen(!open)}
@@ -75,16 +76,16 @@ export function Header() {
         <div className="lg:hidden bg-card border-b border-border">
           <nav className="flex flex-col px-4 py-4 gap-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
                 className="text-sm font-semibold uppercase tracking-wider text-muted-foreground hover:text-primary py-3 border-b border-border/50 last:border-0 transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
+            <Link
               href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -93,7 +94,7 @@ export function Header() {
             >
               <FaWhatsapp className="w-5 h-5" fill="currentColor" aria-hidden="true"/>
               Falar no WhatsApp
-            </a>
+            </Link>
           </nav>
         </div>
       )}

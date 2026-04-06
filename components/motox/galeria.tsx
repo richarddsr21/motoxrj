@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { FaInstagram } from "react-icons/fa"
 
 const fotos = [
@@ -48,7 +49,7 @@ export function Galeria() {
           ))}
         </div>
         <div className="mt-8 text-center">
-          <a
+          <Link
             href="https://instagram.com/motox_rj"
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +60,7 @@ export function Galeria() {
             aria-hidden="true"
             />
             Ver mais no Instagram @motox_rj
-          </a>
+          </Link>
         </div>
       </div>
     </section>

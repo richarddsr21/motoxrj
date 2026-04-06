@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 
 const WHATSAPP_NUMBER = "5521981121015"
@@ -31,7 +32,7 @@ export function CTAFinal() {
         <p className="text-muted-foreground text-lg max-w-xl mx-auto mb-10 text-pretty">
           Atendimento sem burocracia, direto no WhatsApp. Nossa equipe está pronta para te ajudar agora.
         </p>
-        <a
+        <Link
           href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -42,7 +43,7 @@ export function CTAFinal() {
           aria-hidden="true"
           />
           Chamar no WhatsApp
-        </a>
+        </Link>
       </div>
     </section>
   )
