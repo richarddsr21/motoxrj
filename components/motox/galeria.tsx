@@ -1,10 +1,10 @@
 import Image from "next/image"
+import Link from "next/link"
 import { FaInstagram } from "react-icons/fa"
 
 const fotos = [
   { src: "/images/hero-scooter.jpg", alt: "Scooter elétrica na cidade", label: "Showroom" },
   { src: "/images/gallery-store.jpg", alt: "Loja Moto X", label: "Nossa loja" },
-  { src: "/images/model-sport.jpg", alt: "Moto elétrica esportiva", label: "Modelos" },
   { src: "/images/gallery-maintenance.jpg", alt: "Manutenção especializada", label: "Manutenção" },
   { src: "/images/gallery-customer.jpg", alt: "Cliente satisfeito com a Moto X", label: "Clientes" },
   { src: "/images/gallery-accessories.jpg", alt: "Acessórios para motos elétricas", label: "Acessórios" },
@@ -48,7 +48,7 @@ export function Galeria() {
           ))}
         </div>
         <div className="mt-8 text-center">
-          <a
+          <Link
             href="https://instagram.com/motox_rj"
             target="_blank"
             rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export function Galeria() {
             aria-hidden="true"
             />
             Ver mais no Instagram @motox_rj
-          </a>
+          </Link>
         </div>
       </div>
     </section>

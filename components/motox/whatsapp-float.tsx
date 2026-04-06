@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { FaWhatsapp } from "react-icons/fa"
 
 const WHATSAPP_NUMBER = "5521981121015"
@@ -5,7 +6,7 @@ const WHATSAPP_MSG = encodeURIComponent("Olá! Vim pelo site e gostaria de mais 
 
 export function WhatsAppFloat() {
   return (
-    <a
+    <Link
       href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
       target="_blank"
       rel="noopener noreferrer"
@@ -19,6 +20,6 @@ export function WhatsAppFloat() {
         style={{ background: "oklch(0.87 0.19 96)" }}
         aria-hidden="true"
       />
-    </a>
+    </Link>
   )
 }

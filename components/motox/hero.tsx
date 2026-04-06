@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Shield, Wrench, Package, Star } from "lucide-react"
 import { FaWhatsapp } from "react-icons/fa"
+import Link from "next/link"
 
 const WHATSAPP_NUMBER = "5521981121015"
 const WHATSAPP_MSG = encodeURIComponent("Olá! Gostaria de solicitar um orçamento para uma moto elétrica da Moto X.")
@@ -49,15 +50,15 @@ export function Hero() {
               Motos e scooters elétricas com garantia, manutenção, acessórios e atendimento especializado no Rio de Janeiro.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
-              <a
+              <Link
                 href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-primary text-primary-foreground font-bold uppercase tracking-wider text-sm px-7 py-4 rounded-sm hover:bg-yellow-400 active:scale-95 transition-all duration-200 shadow-lg shadow-primary/25"
               >
                 Solicitar orçamento
-              </a>
-              <a
+              </Link>
+              <Link
                 href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,7 +66,7 @@ export function Hero() {
               >
               <FaWhatsapp className="w-5 h-5" fill="currentColor" aria-hidden="true"/>
                 Falar no WhatsApp
-              </a>
+              </Link>
             </div>
             <div className="flex flex-wrap gap-3">
               {badges.map(({ icon: Icon, label }) => (
