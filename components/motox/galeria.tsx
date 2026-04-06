@@ -5,7 +5,6 @@ import { FaInstagram } from "react-icons/fa"
 const fotos = [
   { src: "/images/hero-scooter.jpg", alt: "Scooter elétrica na cidade", label: "Showroom" },
   { src: "/images/gallery-store.jpg", alt: "Loja Moto X", label: "Nossa loja" },
-  { src: "/images/model-sport.jpg", alt: "Moto elétrica esportiva", label: "Modelos" },
   { src: "/images/gallery-maintenance.jpg", alt: "Manutenção especializada", label: "Manutenção" },
   { src: "/images/gallery-customer.jpg", alt: "Cliente satisfeito com a Moto X", label: "Clientes" },
   { src: "/images/gallery-accessories.jpg", alt: "Acessórios para motos elétricas", label: "Acessórios" },
