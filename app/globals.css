@@ -25,11 +25,17 @@
   --input: oklch(0.16 0 0);
   --ring: oklch(0.87 0.19 96);
   --radius: 0.5rem;
-  /* custom tokens */
   --yellow: oklch(0.87 0.19 96);
   --yellow-dark: oklch(0.78 0.18 96);
   --surface: oklch(0.12 0 0);
   --surface-2: oklch(0.16 0 0);
+  --brand-yellow: oklch(0.88 0.2 92);
+  --brand-yellow-hover: oklch(0.82 0.2 92);
+  --brand-black: oklch(0.08 0 0);
+  --brand-surface: oklch(0.12 0 0);
+  --brand-surface-2: oklch(0.16 0 0);
+  --brand-border: oklch(0.22 0 0);
+  --brand-muted: oklch(0.55 0 0);
 }
 
 @theme inline {
@@ -54,6 +60,13 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-yellow-hover: var(--brand-yellow-hover);
+  --color-brand-black: var(--brand-black);
+  --color-brand-surface: var(--brand-surface);
+  --color-brand-surface-2: var(--brand-surface-2);
+  --color-brand-border: var(--brand-border);
+  --color-brand-muted: var(--brand-muted);
   --radius-sm: calc(var(--radius) - 2px);
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 4px);
