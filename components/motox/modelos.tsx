@@ -111,6 +111,11 @@ export function Modelos() {
             </div>
           ))}
         </div>
+        <div className="pt-8 text-center">
+          <Link href="/models" className="inline-flex items-center rounded-md border border-primary px-6 py-3 text-sm font-semibold text-white tracking-wider transition-all duration-200 hover:bg-primary hover:text-black">
+            TODOS OS MODELOS
+          </Link>
+        </div>
       </div>
     </section>
   )

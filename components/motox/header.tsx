@@ -9,12 +9,12 @@ const WHATSAPP_NUMBER = "5521981121015"
 const WHATSAPP_MSG = encodeURIComponent("Olá! Gostaria de saber mais sobre as motos e scooters elétricas da Moto X.")
 
 const navLinks = [
-  { label: "Início", href: "#inicio" },
-  { label: "Modelos", href: "#modelos" },
-  { label: "Serviços", href: "#servicos" },
-  { label: "Diferenciais", href: "#diferenciais" },
-  { label: "Localização", href: "#localizacao" },
-  { label: "Contato", href: "#contato" },
+  { label: "Início", href: "/#inicio" },
+  { label: "Diferenciais", href: "/#diferenciais" },
+  { label: "Modelos", href: "/#modelos" },
+  { label: "Serviços", href: "/#servicos" },
+  { label: "Localização", href: "/#localizacao" },
+  { label: "Contato", href: "/#contato" },
 ]
 
 export function Header() {
@@ -35,7 +35,7 @@ export function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link href="#inicio" className="flex items-center gap-2 group">
+          <Link href="/" className="flex items-center gap-2 group">
             <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-sm">
               <Zap className="w-5 h-5 text-primary-foreground" fill="currentColor" />
             </div>
