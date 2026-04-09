@@ -11,7 +11,7 @@ const WHATSAPP_MSG = encodeURIComponent("Olá! Gostaria de saber mais sobre as m
 const navLinks = [
   { label: "Início", href: "/#inicio" },
   { label: "Diferenciais", href: "/#diferenciais" },
-  { label: "Modelos", href: "/#modelos" },
+  { label: "Mais Vendidos", href: "/#mais-vendidos" },
   { label: "Serviços", href: "/#servicos" },
   { label: "Localização", href: "/#localizacao" },
   { label: "Contato", href: "/#contato" },

@@ -2,7 +2,7 @@ import { Header } from "@/components/motox/header"
 import { Hero } from "@/components/motox/hero"
 import { Sobre } from "@/components/motox/sobre"
 import { Diferenciais } from "@/components/motox/diferenciais"
-import { Modelos } from "@/components/motox/modelos"
+import { MaisVendidos } from "@/components/motox/mais-vendidos"
 import { Servicos } from "@/components/motox/servicos"
 import { PorQueEscolher } from "@/components/motox/por-que-escolher"
 import { Galeria } from "@/components/motox/galeria"
@@ -20,7 +20,7 @@ export default function Page() {
       <Hero />
       <Sobre />
       <Diferenciais />
-      <Modelos />
+      <MaisVendidos />
       <Servicos />
       <PorQueEscolher />
       <Galeria />

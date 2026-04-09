@@ -3,12 +3,12 @@ import Link from "next/link"
 import { FaInstagram } from "react-icons/fa"
 
 const navLinks = [
-  { label: "Início", href: "#inicio" },
-  { label: "Modelos", href: "#modelos" },
-  { label: "Serviços", href: "#servicos" },
-  { label: "Diferenciais", href: "#diferenciais" },
-  { label: "Localização", href: "#localizacao" },
-  { label: "Contato", href: "#contato" },
+  { label: "Início", href: "/#inicio" },
+  { label: "Diferenciais", href: "/#diferenciais" },
+  { label: "Mais Vendidos", href: "/#mais-vendidos" },
+  { label: "Serviços", href: "/#servicos" },
+  { label: "Localização", href: "/#localizacao" },
+  { label: "Contato", href: "/#contato" },
 ]
 
 export function Footer() {
