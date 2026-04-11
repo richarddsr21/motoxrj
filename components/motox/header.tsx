@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Menu, X, Zap } from "lucide-react"
 import { FaWhatsapp } from "react-icons/fa"
 import Link from "next/link"
+import Image from "next/image"
 
 const WHATSAPP_NUMBER = "5521981121015"
 const WHATSAPP_MSG = encodeURIComponent("Olá! Gostaria de saber mais sobre as motos e scooters elétricas da Moto X.")
@@ -36,12 +37,14 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <Link href="/" className="flex items-center gap-2 group">
-            <div className="flex items-center justify-center w-10 h-10 bg-primary rounded-sm">
-              <Zap className="w-5 h-5 text-primary-foreground" fill="currentColor" />
-            </div>
-            <span className="text-xl font-black tracking-wider text-foreground uppercase">
-              MOTO<span className="text-primary">X</span>
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt="Scooter elétrica Moto X"
+              width={110}
+              height={110}
+              loading="eager"
+              className="object-cover"
+            />
           </Link>
           <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (

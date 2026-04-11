@@ -93,6 +93,7 @@ export function Hero() {
                 fill
                 className="object-cover"
                 priority
+                loading="eager"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div

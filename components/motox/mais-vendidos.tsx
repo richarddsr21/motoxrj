@@ -6,29 +6,38 @@ const WHATSAPP_NUMBER = "5521981121015"
 
 const modelos = [
   {
-    img: "/images/model-urban.jpg",
-    nome: "MotoX Urban 500",
-    descricao: "A scooter elétrica perfeita para o dia a dia na cidade. Leve, ágil e econômica.",
-    autonomia: "80 km",
-    velocidade: "60 km/h",
+    img: "/images/x11.jpg",
+    nome: "X11",
+    descricao: "Scooter elétrica moderna com ótimo desempenho para mobilidade urbana.",
+    autonomia: "50 km",
+    velocidade: "32 km/h",
     uso: "Urbano / Dia a dia",
-    destaque: false,
-  },
-  {
-    img: "/images/model-cargo.jpg",
-    nome: "MotoX Cargo Work",
-    descricao: "Projetada para entregas e trabalho urbano com máxima estabilidade e carga.",
-    autonomia: "100 km",
-    velocidade: "70 km/h",
-    uso: "Trabalho / Entregas",
     destaque: true,
   },
   {
-    img: "/images/model-classic.jpg",
-    nome: "MotoX Classic",
-    descricao: "Design retrô-moderno com tecnologia elétrica de ponta para quem valoriza estilo.",
-    autonomia: "90 km",
-    velocidade: "65 km/h",
+    img: "/images/x12.jpg",
+    nome: "X12",
+    descricao: "Scooter elétrica urbana potente e econômica, ideal para uso diário.",
+    autonomia: "50 km",
+    velocidade: "32 km/h",
+    uso: "Urbano / Dia a Dia",
+    destaque: false,
+  },
+  {
+    img: "/images/mx13.png",
+    nome: "MX13",
+    descricao: "Scooter elétrica moderna com ótimo desempenho para mobilidade urbana.",
+    autonomia: "50",
+    velocidade: "32 km/h",
+    uso: "Urbano / Lazer",
+    destaque: false,
+  },
+  {
+    img: "/images/jet.jpg",
+    nome: "JET",
+    descricao: "Scooter elétrica robusta e potente para uso urbano intenso.",
+    autonomia: "45",
+    velocidade: "32 km/h",
     uso: "Urbano / Lazer",
     destaque: false,
   },
@@ -69,6 +78,7 @@ export function MaisVendidos() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    loading="eager"
                   />
                   <div
                     className="absolute inset-0"
@@ -113,7 +123,7 @@ export function MaisVendidos() {
           </div>
         </div>
         <div className="pt-8 text-center">
-          <Link href="/models" className="inline-flex items-center rounded-md border border-primary px-6 py-3 text-sm font-semibold text-white tracking-wider transition-all duration-200 hover:bg-primary hover:text-black">
+          <Link href="/modelos" className="inline-flex items-center rounded-md border border-primary px-6 py-3 text-sm font-semibold text-white tracking-wider transition-all duration-200 hover:bg-primary hover:text-black">
             TODOS OS MODELOS
           </Link>
         </div>

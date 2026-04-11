@@ -3,11 +3,11 @@ import Link from "next/link"
 import { FaInstagram } from "react-icons/fa"
 
 const fotos = [
-  { src: "/images/hero-scooter.jpg", alt: "Scooter elétrica na cidade", label: "Showroom" },
-  { src: "/images/gallery-store.jpg", alt: "Loja Moto X", label: "Nossa loja" },
-  { src: "/images/gallery-maintenance.jpg", alt: "Manutenção especializada", label: "Manutenção" },
-  { src: "/images/gallery-customer.jpg", alt: "Cliente satisfeito com a Moto X", label: "Clientes" },
-  { src: "/images/gallery-accessories.jpg", alt: "Acessórios para motos elétricas", label: "Acessórios" },
+  { src: "/images/galeria-5.jpg", alt: "Clientes satisfeitos", label: "Clientes" },
+  { src: "/images/galeria-2.jpg", alt: "Clientes satisfeitos", label: "Clientes" },
+  { src: "/images/galeria-3.jpg", alt: "Clientes satisfeitos", label: "Clientes" },
+  { src: "/images/galeria-4.jpg", alt: "Clientes satisfeitos", label: "Clientes" },
+  { src: "/images/galeria-1.jpg", alt: "Clientes satisfeitos", label: "Clientes" },
 ]
 
 export function Galeria() {
@@ -27,9 +27,9 @@ export function Galeria() {
             <div
               key={foto.src}
               className={`group relative overflow-hidden rounded-sm bg-card ${
-                i === 0 ? "col-span-2 md:col-span-2 row-span-2" : ""
+                i === 0 ? "col-span-2 md:col-span-1" : ""
               }`}
-              style={{ aspectRatio: i === 0 ? "16/9" : "1/1" }}
+              style={{ aspectRatio: "1/1" }}
             >
               <Image
                 src={foto.src}
@@ -49,7 +49,7 @@ export function Galeria() {
         </div>
         <div className="mt-8 text-center">
           <Link
-            href="https://instagram.com/motox_rj"
+            href="https://instagram.com/motox.rj"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 border border-border text-muted-foreground font-semibold uppercase tracking-wider text-sm px-6 py-3 rounded-sm hover:border-primary hover:text-primary transition-all duration-200"

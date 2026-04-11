@@ -27,7 +27,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Urbano",
     badge: "Mais vendido",
-    image: "/images/moto-urban-pro.jpg",
+    image: "/images/x11.jpg",
     price: "A partir de R$ 9.990",
   },
   {
@@ -39,8 +39,8 @@ export const products: Product[] = [
     power: "1000W",
     category: "Scooter elétrica",
     use: "Urbano",
-    badge: "Destaque",
-    image: "/images/moto-sport-x2.jpg",
+    badge: "Mais vendido",
+    image: "/images/x12.jpg",
     price: "A partir de R$ 10.990",
   },
   {
@@ -53,7 +53,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Urbano",
     badge: "Mais vendido",
-    image: "/images/moto-thunder-r3.jpg",
+    image: "/images/mx13.png",
     price: "A partir de R$ 11.990",
   },
   {
@@ -66,7 +66,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Urbano",
     badge: "Mais vendido",
-    image: "/images/moto-volt-gt.jpg",
+    image: "/images/jet.jpg",
     price: "A partir de R$ 12.990",
   },
   {
@@ -79,7 +79,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Dia a dia",
     badge: "Novo",
-    image: "/images/scooter-city-s1.jpg",
+    image: "/images/t8-super.png",
     price: "A partir de R$ 12.490",
   },
   {
@@ -92,7 +92,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Trabalho",
     badge: "Novo",
-    image: "/images/scooter-neo-plus.jpg",
+    image: "/images/fanton.png",
     price: "A partir de R$ 11.490",
   },
   {
@@ -105,7 +105,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Urbano",
     badge: "Destaque",
-    image: "/images/scooter-max-cargo.jpg",
+    image: "/images/sol.jpg",
     price: "A partir de R$ 10.990",
   },
   {
@@ -118,7 +118,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Dia a dia",
     badge: "Novo",
-    image: "/images/bike-eco-e1.jpg",
+    image: "/images/baw.jpg",
     price: "A partir de R$ 11.990",
   },
   {
@@ -131,11 +131,11 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Urbano",
     badge: null,
-    image: "/images/bike-trail-x.jpg",
+    image: "/images/dot.png",
     price: "A partir de R$ 10.490",
   },
   {
-    id: "tri-bib",
+    id: "tri-big",
     name: "TRI BIG",
     description: "Triciclo elétrico estável e ideal para trabalho e transporte.",
     autonomy: 45,
@@ -144,7 +144,7 @@ export const products: Product[] = [
     category: "Triciclo elétrico",
     use: "Urbano",
     badge: "Novo",
-    image: "/images/bike-trail-x.jpg",
+    image: "/images/tri-big.png",
     price: "A partir de R$ 13.990",
   },
   {
@@ -157,7 +157,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Urbano",
     badge: null,
-    image: "/images/bike-trail-x.jpg",
+    image: "/images/street-plus.png",
     price: "A partir de R$ 9.990",
   },
   {
@@ -170,7 +170,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Dia a dia",
     badge: null,
-    image: "/images/bike-trail-x.jpg",
+    image: "/images/street.png",
     price: "A partir de R$ 7.990",
   },
   {
@@ -183,7 +183,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Urbano",
     badge: null,
-    image: "/images/bike-trail-x.jpg",
+    image: "/images/maggie.png",
     price: "A partir de R$ 8.490",
   },
   {
@@ -196,7 +196,7 @@ export const products: Product[] = [
     category: "Scooter elétrica",
     use: "Dia a dia",
     badge: null,
-    image: "/images/bike-trail-x.jpg",
+    image: "/images/malo.png",
     price: "A partir de R$ 6.990",
   },
 ]
