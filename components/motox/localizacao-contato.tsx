@@ -107,7 +107,7 @@ export function LocalizacaoContato() {
               <p className="text-sm font-semibold text-foreground">{TELEFONE}</p>
             </Link>
             <Link
-              href="https://instagram.com/motox_rj"
+              href="https://instagram.com/motox.rj"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-background border border-border rounded-sm p-6 flex flex-col items-center text-center gap-3 hover:border-primary/60 transition-all duration-300"
@@ -116,7 +116,7 @@ export function LocalizacaoContato() {
                 <FaInstagram className="w-8 h-8 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
               </div>
               <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Instagram</p>
-              <p className="text-sm font-semibold text-foreground">@motox_rj</p>
+              <p className="text-sm font-semibold text-foreground">@motox.rj</p>
             </Link>
             <Link
               href={`tel:+55${WHATSAPP_NUMBER}`}

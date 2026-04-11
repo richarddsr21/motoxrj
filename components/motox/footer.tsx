@@ -1,5 +1,5 @@
-import { Zap } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { FaInstagram } from "react-icons/fa"
 
 const navLinks = [
@@ -17,13 +17,15 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
-            <Link href="#inicio" className="flex items-center gap-2 mb-4">
-              <div className="flex items-center justify-center w-9 h-9 bg-primary rounded-sm">
-                <Zap className="w-4 h-4 text-primary-foreground" fill="currentColor" />
-              </div>
-              <span className="text-lg font-black tracking-wider text-foreground uppercase">
-                MOTO<span className="text-primary">X</span>
-              </span>
+            <Link href="/#inicio" className="flex items-center gap-2 mb-4">
+              <Image
+               src="/images/logo.png"
+               alt="Scooter elétrica Moto X"
+               width={110}
+               height={110}
+               loading="eager"
+               className="object-cover"
+              />
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
               Especialistas em mobilidade elétrica no Rio de Janeiro. Motos, scooters e bikes elétricas sem burocracia.
@@ -47,7 +49,7 @@ export function Footer() {
           <div>
             <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-4">Redes sociais</p>
             <Link
-              href="https://instagram.com/motox_rj"
+              href="https://instagram.com/motox.rj"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-200 mb-4"
